@@ -9,7 +9,7 @@ module "eks" {
   bootstrap_self_managed_addons = true
 
   cluster_name    = "${local.name_prefix}-eks-cluster"
-  cluster_version = "1.32"
+  cluster_version = "1.33"
 
   cluster_addons = {
     coredns                = {}

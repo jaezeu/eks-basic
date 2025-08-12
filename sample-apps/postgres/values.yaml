@@ -1,0 +1,21 @@
+auth:
+  enablePostgresUser: true
+  postgresPassword: "admin-password"
+  ## @param auth.username Name for a custom user to create
+  ##
+  username: "example-user"
+  ## @param auth.password Password for the custom user to create. Ignored if `auth.existingSecret` is provided
+  ##
+  password: "example-password"
+  ## @param auth.database Name for a custom database to create
+  ##
+  database: "example-db"
+
+primary:
+  persistence:
+    enabled: false
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true
